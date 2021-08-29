@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:300i,400,700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Bootstrap 5 Post with Thumbnails Card</title>
+    <style>
+      body {
+      padding: 0;
+      margin: 0;
+      font-family: "Nunito Sans";
+      }
+      .h-300{
+      height: 300px;
+      display: grid;
+      place-content: center;
+      }
+      .badge{
+      position: absolute;
+      right: 5px;
+      top: 5px;
+      }
+      .card{
+      height: 100%;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, .1), 0 8px 16px rgba(0, 0, 0, .1);
+      }
+      small{
+      float: right;
+      font-size: 14px;
+      font-weight: 500;
+      color: #A19882;
+      }
+      .btn{
+      padding: 6px 25px;
+      margin-top: 10px;
+      font-size: 20px;
+      }
+      @media(max-width: 768px){
+      img{
+      height: 100%;
+      }
+      }
+      @media(max-width: 575px){
+      .container{
+      width: 90%;
+      }
+      .h-300{
+      height: 250px;
+      }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container p-0 mt-5 mb-5">
+      <div class="row row-cols-1 row-cols-lg-3 row-cols-md-1 g-4">
+        <div class="col">
+          <div class="card">
+            <span class="badge rounded-pill bg-success">Markup Language</span>
+            <div class="h-300 bg-danger">
+              <h1 class="text-white">HTML</h1>
+            </div>
+            <div class="card-body">
+            <small>Admin</small>
+              <h3 class="card-title">Post Thumbnail 1</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat.
+              </p>
+              <button type="button" class="btn btn-danger w-100">View post</button>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <span class="badge rounded-pill bg-danger">CSS</span>
+            <div class="h-300 bg-warning">
+              <h1 class="text-white">CSS</h1>
+            </div>
+            <div class="card-body">
+              <small>User</small>
+              <h3 class="card-title">Post Thumbnail 2</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat.
+              </p>
+              <button type="button" class="btn btn-warning w-100 text-white">View post</button>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <span class="badge rounded-pill bg-dark">Framework</span>
+            <div class="h-300 bg-primary">
+              <h1 class="text-white">Bootstrap</h1>
+            </div>
+            <div class="card-body">
+            <small>Admin</small>
+              <h3 class="card-title">Post Thumbnail 3</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat.
+              </p>
+              <button type="button" class="btn btn-primary w-100">View post</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
